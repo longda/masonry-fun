@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Masonry Shapes</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=1" alt="1" /></div>
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=2" alt="2" /></div>
+    <div class="square"><img src="http://placehold.it/220x100/439D9A/ffffff/.png&text=3" alt="3" /></div>
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=5" alt="5" /></div>
+    <div class="square"><img src="http://placehold.it/220/439D9A/ffffff/.png&text=4" alt="4" /></div>
+    
+    <div class="square"><img src="http://placehold.it/220/439D9A/ffffff/.png&text=6" alt="6" /></div>
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=7" alt="7" /></div>
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=8" alt="8" /></div>
+    <div class="square"><img src="http://placehold.it/220/439D9A/ffffff/.png&text=9" alt="9" /></div>
+    <div class="square"><img src="http://placehold.it/220x100/439D9A/ffffff/.png&text=10" alt="10" /></div>
+    <div class="square"><img src="http://placehold.it/220/439D9A/ffffff/.png&text=11" alt="11" /></div>
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=12" alt="12" /></div>
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=13" alt="13" /></div>
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=14" alt="14" /></div>
+    <div class="square"><img src="http://placehold.it/220x100/439D9A/ffffff/.png&text=15" alt="15" /></div>
+    <div class="square"><img src="http://placehold.it/220/439D9A/ffffff/.png&text=16" alt="16" /></div>
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=17" alt="17" /></div>
+    <div class="square"><img src="http://placehold.it/220x100/439D9A/ffffff/.png&text=18" alt="18" /></div>
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=19" alt="19" /></div>
+    <div class="square"><img src="http://placehold.it/100/439D9A/ffffff/.png&text=20" alt="20" /></div>
+  </div>
+  <script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+  <script>
+    $(function(){
+      var $container = $('#container');
+
+      $container.imagesLoaded(function(){
+        $container.masonry({
+          itemSelector: '.square'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
